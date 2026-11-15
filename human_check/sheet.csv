@@ -1,0 +1,121 @@
+item,original,reworded,same_facts (yes/no),if no: what changed
+Q01,"Company A did not provide, among other things, adequate veterinary care, adequate staffing and safe living conditions for dogs housed at the Cumberland County facility. The Justice Department secured the surrender of over 4,000 beagles from the facility in 2022.","actor: Company A
+action: did not provide adequate veterinary care, adequate staffing, and safe living conditions, among other things, for dogs housed at the Cumberland County facility
+affected_party: dogs housed at the Cumberland County facility
+consequence: UNKNOWN
+other_facts: The Justice Department secured the surrender of over 4,000 beagles from the facility in 2022.",,
+Q02,"On April 22, 2026 at approximately 9:32 a.m. local time, a release of hydrogen sulfide occurred at the Company A facility in Institute, WV. The incident caused fatal injury to two employees and injured 4 other employees.","On April 22, 2026 at approximately 9:32 a.m. local time, the occurrence of a hydrogen sulfide release at the Company A facility in Institute, WV resulted in fatal injury to two employees and injury to 4 other employees.",,
+Q03,We are shocked and heartbroken by the tragedy that occurred in our plant last night. We have spent the day trying our best to support all of the members of our family as we attempt to process this terrible loss together. We want to express our extreme gratitude to all of the first responders who arrived at the scene.,"actor: The speaker(s) of the statement (""we""), identified only as the party associated with the plant (""our plant""); exact identity UNKNOWN.
+action: (1) Stated that they are shocked and heartbroken about a tragedy that occurred in their plant last night; (2) spent the day trying their best to support all of the members of what they call ""our family"" while attempting to process what they call this terrible loss together; (3) stated a desire to express their extreme gratitude to all of the first responders who arrived at the scene.
+affected_party: (1) ""All of the members of our family"" (the speaker's own phrase; specific individuals UNKNOWN), recipients of the day's support effort; (2) first responders who arrived at the scene, recipients of the expressed gratitude.
+consequence: As stated: the speakers report being shocked and heartbroken; a support effort occupied the day; gratitude toward the first responders is expressed. No other consequences are stated; the nature and outcome of the tragedy are UNKNOWN.
+other_facts: A tragedy occurred in the speaker's plant ""last night"" (the night before the statement; exact time UNKNOWN). ""Shocked,"" ""heartbroken,"" ""tragedy,"" and ""terrible loss"" are the speaker's own characterizations. The support effort is described as ""trying our best"" and as an attempt to process the loss ""together."" The gratitude is described as ""extreme"" and directed at ""all of the first responders who arrived at the scene."" Not stated (UNKNOWN): what the tragedy was, whether anyone was harmed, who was involved, how many people were affected, the identity of the speaker/company, and who is included in ""our family."" No cause of the tragedy is stated or implied.",,
+Q04,"A worker was tasked with cleaning a commercial grinder. A co-worker stepped on the machine's foot-control pedal which started the grinder, pulling in the employee's hand and causing the amputation of four fingers.","The worker's task was to clean a commercial grinder. A co-worker's stepping on the machine's foot-control pedal started the grinder, pulling in the employee's hand and causing the amputation of four fingers.",,
+Q05,"On June 4, 2025, at approximately 2:19 p.m. local time, the Company A facility experienced an explosion in an ethane cracking furnace. The incident resulted in a fire, a release of ethylene cracked gas and combustion products, and estimated property damage of $95 million.","On June 4, 2025, at approximately 2:19 p.m. local time, an explosion was experienced in an ethane cracking furnace. The incident resulted in a fire, a release of ethylene cracked gas and combustion products, and estimated property damage of $95 million.",,
+Q06,"No employees were injured in an explosion and fire at the company's plant on May 3, 2019. Company A failed to ensure that electrical equipment and installations in the production area of the plant complied with OSHA electrical standards, and were approved for hazardous locations.","actor: Company A
+action: failed to ensure that electrical equipment and installations in the production area of the plant complied with OSHA electrical standards and were approved for hazardous locations
+affected_party: UNKNOWN
+consequence: an explosion and fire at the company's plant on May 3, 2019; no employees were injured
+other_facts: NONE",,
+Q07,"Company A learned in November 2016 that intruders had accessed consumer data using an access key an engineer had posted on a code-sharing website. They downloaded unencrypted files with more than 25 million names and email addresses, 22 million names and phone numbers, and 600,000 driver's license numbers. Company A notified regulators and consumers within a week.","actor: Intruders (identities and number UNKNOWN)
+action: Accessed consumer data using an access key that an engineer had posted on a code-sharing website, and downloaded unencrypted files
+affected_party: Consumers whose data was accessed (exact number of affected individuals UNKNOWN)
+consequence: Unencrypted files containing more than 25 million names and email addresses, 22 million names and phone numbers, and 600,000 driver's license numbers were downloaded; the passage states no other consequences
+other_facts: Company A learned in November 2016 that the access had occurred; the date or period of the access itself is not stated (UNKNOWN). The access key had been posted on a code-sharing website by an engineer; the engineer's affiliation, intent, and awareness are not stated (UNKNOWN). Company A notified regulators and consumers within a week of learning of the access. The downloaded files were unencrypted. Data categories and quantities: more than 25 million names and email addresses; 22 million names and phone numbers; 600,000 driver's license numbers.",,
+Q08,"On April 22, 2026 at approximately 9:32 a.m. local time, a release of hydrogen sulfide occurred at the Company A facility in Institute, WV. The incident caused fatal injury to two employees and injured 4 other employees.","On April 22, 2026 at approximately 9:32 a.m. local time, a release of hydrogen sulfide occurred at the Company A facility in Institute, WV. The incident caused a fatal outcome for two employees and impacted four other employees.",,
+Q09,"Company A deceived users about their ability to control the privacy of their personal information. Despite repeated promises to its billions of users worldwide that they could control how their personal information is shared, Company A undermined consumers' choices.","actor: Company A
+action: deceived users about their ability to control the privacy of their personal information and undermined consumers' choices
+affected_party: users / consumers (billions of users worldwide)
+consequence: UNKNOWN
+other_facts: Company A made repeated promises to its billions of users worldwide that they could control how their personal information is shared.",,
+Q10,"Carpenters and general construction laborers were installing roof rafters and roof sheeting without fall protection, exposing them to falls of up to 25 feet.","Carpenters and general construction laborers were installing roof rafters and roof sheeting without fall protection, putting them at risk of drops of up to 25 feet.",,
+Q11,"On March 17, 2026, employees of Company A were replacing a drill bit on a horizontal drilling machine when the pipe stem began to rotate and fatally struck one employee.","On March 17, 2026, a drill bit was being replaced on a horizontal drilling machine when the pipe stem began to rotate and fatally struck one employee.",,
+Q12,"On Jan. 7, 2026, an employee of Company A was removing accumulated dirt from a school's crawl space with a mini excavator and became trapped between the equipment and a concrete beam, resulting in fatal injuries.","On Jan. 7, 2026, accumulated dirt was being removed from a school's crawl space with a mini excavator when the worker became trapped between the equipment and a concrete beam, resulting in fatal injuries.",,
+Q13,"Since the 2009 product introduction, no infant fatalities have occurred in the sleepers, though some infants rolled over while unrestrained. The recall covers about 4.7 million products.","actor: UNKNOWN
+action: recall
+affected_party: about 4.7 million products
+consequence: UNKNOWN
+other_facts: Since the 2009 product introduction, no infant fatalities have occurred in the sleepers; some infants rolled over while unrestrained.",,
+Q14,"The explosion occurred in May 2017, and no employees were injured. The incident also ultimately destroyed the facility, resulting in over $15 million in property damage. The cause of the dust explosions and collapsed buildings was the ignition of combustible corn dust inside process equipment.","actor: ignition of combustible corn dust inside process equipment
+action: caused dust explosions and collapsed buildings
+affected_party: facility
+consequence: facility was ultimately destroyed, resulting in over $15 million in property damage
+other_facts: The explosion occurred in May 2017; no employees were injured",,
+Q15,Hazardous chemicals stored improperly were the cause of a fire at a Company A facility. The incident originated at a company warehouse that stored various chemicals.,"actor: hazardous chemicals stored improperly
+action: caused
+affected_party: Company A facility
+consequence: fire
+other_facts: The incident originated at a company warehouse that stored various chemicals.",,
+Q16,"On July 29, 2025 at approximately 11:56 am local time, multiple explosions occurred at the Company A facility in Fremont, Nebraska, resulting in three fatalities.","On July 29, 2025 at approximately 11:56 am local time, the occurrence of multiple explosions at the Company A facility in Fremont, Nebraska, caused three fatalities.",,
+Q17,"Workers in Plant 3, where molded brick is made, breathed in silica dust above safe limits. The company knew about the exposure but did not fix the problem or require workers to wear respirators.","Workers in Plant 3, where molded brick is made, breathed in silica dust above safe limits. The exposure was known, but the problem was not fixed and respirators were not required for workers.",,
+Q18,"An outbreak of antibiotic-resistant Pseudomonas aeruginosa infections affected more than 80 patients, with 4 patient deaths and at least 14 cases of vision loss. Testing found that all batches of Company A's Artificial Tears were sterile and no genetic match to outbreak isolates was found.","actor: outbreak of antibiotic-resistant Pseudomonas aeruginosa infections
+action: affected
+affected_party: more than 80 patients
+consequence: 4 patient deaths and at least 14 cases of vision loss
+other_facts: Testing found that all batches of Company A's Artificial Tears were sterile and no genetic match to outbreak isolates was found.",,
+Q19,"A 6-year-old child was bruised after touching the rear of the treadmill. Company A has received 72 reports of objects being caught near the rear of the treadmill, and no reports of injuries to children or adults.","actor: 6-year-old child
+action: touched rear of treadmill
+affected_party: 6-year-old child
+consequence: bruised
+other_facts: Company A has received 72 reports of objects being caught near the rear of the treadmill; no reports of injuries to children or adults.",,
+Q20,"Carpenters and general construction laborers were installing roof rafters and roof sheeting without fall protection, exposing them to falls of up to 25 feet.","Roof rafters and roof sheeting were installed without fall protection, exposing workers to falls of up to 25 feet.",,
+Q21,"On Sept. 24, 2025, two workers were installing tarp on a roof when they slipped from the roof into an empty pool. One employee suffered fatal injuries and another sustained serious injuries.","On Sept. 24, 2025, two workers were installing tarp on a roof when they slipped from the roof into an empty pool. One employee experienced fatal injuries and another experienced serious injuries.",,
+Q22,"On April 22, 2026 at approximately 9:32 a.m. local time, a release of hydrogen sulfide occurred at the Company A facility in Institute, WV. The incident caused fatal injury to two employees and injured 4 other employees.","On April 22, 2026 at approximately 9:32 a.m. local time, the recording of an unintended emission of hydrogen sulfide at the facility in Institute, WV resulted in fatal injury to two employees and injury to four other employees.",,
+Q23,"On July 29, 2025 at approximately 11:56 am local time, multiple explosions occurred at the Company A facility in Fremont, Nebraska, resulting in three fatalities.","On July 29, 2025 at approximately 11:56 am local time, multiple explosions occurred at the Company A facility in Fremont, Nebraska, resulting in three lives lost.",,
+Q24,"A worker was tasked with cleaning a commercial grinder. A co-worker stepped on the machine's foot-control pedal which started the grinder, pulling in the employee's hand and causing the amputation of four fingers.","A worker was tasked with cleaning a commercial grinder. A co-worker stepped on the machine's foot-control pedal which started the grinder, pulling in the employee's hand and resulting in the loss of four fingers.",,
+Q25,Hazardous chemicals stored properly were not the cause of a fire at a Company A facility. The incident originated at a company warehouse that stored various chemicals.,"actor: UNKNOWN
+action: UNKNOWN
+affected_party: Company A facility
+consequence: A fire occurred at the facility; the fire was not caused by hazardous chemicals stored properly; the incident originated at a company warehouse that stored various chemicals.
+other_facts: Hazardous chemicals were stored properly at the facility; the warehouse stored various chemicals.",,
+Q26,"An inspection of Company A began on Jan. 7, 2026, after an employee asphyxiated while inspecting a tanker trailer.","The beginning of an inspection of Company A occurred on Jan. 7, 2026, after an employee's asphyxiation during the inspection of a tanker trailer.",,
+Q27,"A month later, there was another incident involving multiple worker hospitalizations on March 18, when a kettle lid opened while under pressure releasing steam, hot liquid, and organic material, burning three workers. Two workers were fatally injured and another hospitalized.","A month later, another incident involving multiple worker hospitalizations occurred on March 18, when the kettle lid was opened while under pressure, releasing steam, hot liquid, and organic material, burning three workers. Two workers were fatally injured and another hospitalized.",,
+Q28,"Four employees suffered fatal injuries in an explosion and fire at the company's plant on May 3, 2019. Company A failed to ensure that electrical equipment and installations in the production area of the plant complied with OSHA electrical standards, and were approved for hazardous locations.","actor: Company A
+action: Failed to ensure that electrical equipment and installations in the production area of the company's plant complied with OSHA electrical standards and were approved for hazardous locations.
+affected_party: UNKNOWN - the passage does not identify an affected party of Company A's failure.
+consequence: UNKNOWN - the passage does not state any consequence of Company A's failure.
+other_facts: Four employees suffered fatal injuries in an explosion and fire at the company's plant on May 3, 2019. The passage does not state a causal link between Company A's failure and the explosion, fire, or fatal injuries. The compliance concerns were specific to electrical equipment and installations in the production area of the plant. The requirements referenced are compliance with OSHA electrical standards and approval for hazardous locations.",,
+Q29,In late 2016 we became aware that two individuals outside the company had inappropriately accessed user data stored on a third-party cloud-based service that we use. The incident did not breach our corporate systems or infrastructure.,"actor: two individuals outside the company
+action: inappropriately accessed user data stored on a third-party cloud-based service that we use
+affected_party: user data
+consequence: UNKNOWN
+other_facts: In late 2016 we became aware of the access; the incident did not breach our corporate systems or infrastructure",,
+Q30,"Workers were installing a storm sewer system 12 feet below ground level in a trench that was not adequately protected from soil collapse. When a portion of the trench's wall failed, the unrestrained soil engulfed one worker.","Installation of a storm sewer system 12 feet below ground level proceeded in a trench lacking adequate protection against soil collapse. Following failure of a segment of the trench wall, uncontrolled soil movement resulted in the burial of a worker.",,
+Q31,"Company A provided adequate veterinary care and adequate staffing, but safe living conditions for dogs at the Cumberland County facility were not met. The Justice Department secured the surrender of over 4,000 beagles from the facility in 2022.","actor: Company A
+action: provided adequate veterinary care and adequate staffing; safe living conditions for dogs at the Cumberland County facility were not met
+affected_party: dogs at the Cumberland County facility
+consequence: safe living conditions were not met
+other_facts: The Justice Department secured the surrender of over 4,000 beagles from the facility in 2022.",,
+Q32,"Company A accurately told users about their ability to control the privacy of their personal information. Consistent with its promises to its billions of users worldwide that they could control how their personal information is shared, Company A upheld consumers' choices.","actor: Company A
+action: Accurately told users about their ability to control the privacy of their personal information and upheld consumers' choices.
+affected_party: Users — described as Company A's billions of users worldwide.
+consequence: UNKNOWN — the passage states no outcome beyond that consumers' choices were upheld; no further effect on users is specified.
+other_facts: The passage had previously made (per the passage) promises to its billions of users worldwide that they could control how their personal information is shared; the passage characterizes Company A's conduct as consistent with those promises and characterizes its disclosures as accurate; the quantity 'billions of users worldwide' is as stated in the passage; no timeframe, specific choices, or independent source is identified; the passage contains no allegation of wrongdoing or harm.",,
+Q33,"Company A did not patch its network after being alerted in March 2017 to a critical security vulnerability. Hackers accessed files, but no Social Security numbers or payment card numbers were taken; only 5,000 names were viewed.","actor: Hackers
+action: accessed files
+affected_party: files
+consequence: no Social Security numbers or payment card numbers were taken; only 5,000 names were viewed
+other_facts: Company A did not patch its network after being alerted in March 2017 to a critical security vulnerability.",,
+Q34,"A massive explosion on November 12, 2024, at the Company A facility in Louisville, KY, caused two fatalities and seriously injured two others. In addition to the fatalities, serious injuries, and damage to the facility itself, a section of the pressure vessel was ejected beyond the fence line and damaged a residential unit.","On November 12, 2024, a significant incident at the facility in Louisville, KY, resulted in two fatalities and serious injuries to two individuals. In addition to the fatalities, serious injuries, and damage to the facility itself, the ejection of a pressure‑vessel section beyond the fence line caused damage to a residential unit.",,
+Q35,"On Jan. 7, 2026, an employee of Company A was removing accumulated dirt from a school's crawl space with a mini excavator and became trapped between the equipment and a concrete beam, resulting in fatal injuries.","On Jan. 7, 2026, an employee of Company A was removing accumulated dirt from a school's crawl space with a mini excavator and became trapped between the equipment and a concrete beam, resulting in deadly injuries.",,
+Q36,"Company A is pleased that the CSB agrees that the tragic 2017 explosion that occurred at its Wisconsin mill was not started by fugitive dust relating to housekeeping procedures. Company A continues to hold those lost and injured in the accident in our hearts and joins with them, their loved ones, and our communities in the spirit of healing.","actor: Company A
+action: joins with those lost and injured in the accident, their loved ones, and its communities in the spirit of healing
+affected_party: those lost and injured in the accident, their loved ones, and its communities
+consequence: UNKNOWN
+other_facts: Company A is pleased that the CSB agrees that the tragic 2017 explosion that occurred at its Wisconsin mill was not started by fugitive dust relating to housekeeping procedures. Company A continues to hold those lost and injured in the accident in its heart.",,
+Q37,"A massive explosion on November 12, 2024, at the Company A facility in Louisville, KY, caused two fatalities and seriously injured two others. In addition to the fatalities, serious injuries, and damage to the facility itself, a section of the pressure vessel was ejected beyond the fence line and damaged a residential unit.","The massive explosion on November 12, 2024, at the Company A facility in Louisville, KY, resulted in the causation of two fatalities and the serious injury of two others. In addition to the fatalities, serious injuries, and damage to the facility itself, the ejection of a section of the pressure vessel beyond the fence line caused damage to a residential unit.",,
+Q38,"In 2015, we learned that a psychology professor lied to us and violated our Platform Policies by passing data from an app that was using Company A Login to a political data firm. We are committed to vigorously enforcing our policies to protect people's information.","actor: psychology professor
+action: lied to us and violated Platform Policies by passing data from an app using Company A Login to a political data firm
+affected_party: us
+consequence: commitment to vigorously enforce policies to protect people's information
+other_facts: In 2015, we learned of the professor's actions; the app used Company A Login; the data was passed to a political data firm; we state we are committed to enforcing our policies.",,
+Q39,"In committing the crimes identified in the charging document, we fell short of our standards for animal and environmental welfare and apologize to the public for the harm caused by our conduct.","actor: we
+action: fell short of standards for animal and environmental welfare
+affected_party: the public
+consequence: harm caused by conduct
+other_facts: The action occurred in committing the crimes identified in the charging document; the actor apologizes to the public.",,
+Q40,"Since the 2009 product introduction, over 30 infant fatalities have occurred in the sleepers, after the infants rolled over while unrestrained, or under other circumstances. The recall covers about 4.7 million products.","actor: UNKNOWN
+action: rolled over while unrestrained or occurred under other circumstances
+affected_party: over 30 infants
+consequence: fatalities
+other_facts: products were introduced in 2009; recall covers about 4.7 million products",,

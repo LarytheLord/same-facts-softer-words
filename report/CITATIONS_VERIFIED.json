@@ -1,0 +1,134 @@
+[
+ {
+  "id": "2506.09038",
+  "title": "AbstentionBench: Reasoning LLMs Fail on Unanswerable Questions",
+  "first_author": "Polina Kirichenko",
+  "published": "2025-06-10",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2609.08236",
+  "title": "Style Over Substance: Content-Invariant Wrappers Flip LLM Safety-Judge Verdicts",
+  "first_author": "Yongxi Zhou",
+  "published": "2026-09-08",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2506.11440",
+  "title": "AbsenceBench: Language Models Can't Tell What's Missing",
+  "first_author": "Harvey Yiyun Fu",
+  "published": "2025-06-13",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2503.11751",
+  "title": "reWordBench: Benchmarking and Improving the Robustness of Reward Models with Transformed Inputs",
+  "first_author": "Zhaofeng Wu",
+  "published": "2025-03-14",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2604.23478",
+  "title": "JudgeSense: A Benchmark for Prompt Sensitivity in LLM-as-a-Judge Systems",
+  "first_author": "Rohith Reddy Bellibatlu",
+  "published": "2026-04-26",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2605.28188",
+  "title": "Framing Matters: Addressing Framing Sensitivity in Decision-Making through Behaviorally-Grounded Value Alignment",
+  "first_author": "Seojin Hwang",
+  "published": "2026-05-27",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2601.13537",
+  "title": "When Wording Steers the Evaluation: Framing Bias in LLM judges",
+  "first_author": "Yerin Hwang",
+  "published": "2026-01-20",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2603.05651",
+  "title": "The Fragility Of Moral Judgment In Large Language Models",
+  "first_author": "Tom van Nuenen",
+  "published": "2026-03-05",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2606.00093",
+  "title": "Agreement Metrics for LLM-as-Judge Evaluation: What to Report and Why",
+  "first_author": "Delip Rao",
+  "published": "2026-05-25",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2608.31016",
+  "title": "LLM Judges Verify Presence, Not Absence: Omission Blindness in AI Clinical Notes and What Recovers It",
+  "first_author": "Sebastian Fox",
+  "published": "2026-08-31",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2606.10852",
+  "title": "JANUS: Evaluating Goal-Conditioned Distortion in Factually Grounded LLM Communication",
+  "first_author": "Polydoros Giannouris",
+  "published": "2026-06-09",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2608.17994",
+  "title": "Judge, Retrieve, or Abstain: Uncertainty-Guarded LLM Judging with Provable Risk Guarantees",
+  "first_author": "Sher Badshah",
+  "published": "2026-08-18",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2609.36139",
+  "title": "Language Models Are \"Insecure\" Reporters",
+  "first_author": "Jenny Y. Huang",
+  "published": "2026-09-28",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2609.31121",
+  "title": "Monitor Jailbreaking: Evading Chain-of-Thought Monitoring Without Encoded Reasoning",
+  "first_author": "Julian Schulz",
+  "published": "2026-09-25",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "2609.30217",
+  "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure",
+  "first_author": "David Schmotz",
+  "published": "2026-09-24",
+  "resolver": "export.arxiv.org/api/query",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "doi:10.1207/s15327957pspr0303_3",
+  "title": "Moral Disengagement in the Perpetration of Inhumanities",
+  "first_author": "Bandura",
+  "resolver": "api.crossref.org",
+  "checked": "2026-11-15"
+ },
+ {
+  "id": "van Leeuwen 2008 Discourse and Practice (OUP, ISBN 9780195323306)",
+  "resolver": "api.crossref.org (book reviews citing it)",
+  "checked": "2026-11-15"
+ }
+]

@@ -1,0 +1,5 @@
+body{font-family:Georgia,"Times New Roman",serif;font-size:10.5pt;line-height:1.38;max-width:7in;margin:0 auto;color:#111}
+h1{font-size:17pt;margin:0 0 6pt}h2{font-size:13pt;margin:14pt 0 4pt}h3{font-size:11pt;margin:10pt 0 3pt}
+table{border-collapse:collapse;font-size:8.6pt;margin:6pt 0;width:100%}th,td{border:1px solid #bbb;padding:2pt 4pt;text-align:left}
+img{max-width:100%}code{font-size:9pt}p,li{margin:2pt 0}
+@page{size:Letter;margin:0.8in}
