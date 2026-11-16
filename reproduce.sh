@@ -13,4 +13,5 @@ echo "== positive control (4.2)"; $PY harness/control_check.py
 echo "== matched omission arm (4.2b)"; $PY harness/omission_arm_check.py
 echo "== omission and scale probes (4.3, 4.4)"; $PY harness/rescore_probes.py --scale harness/results_scale harness/results_scale_glm harness/results_scale_claude --omission harness/results_omission harness/results_omission_claude harness/results_omission_groq harness/results_omission_glm
 echo "== decision-level and two-step protocol (4.5)"; $PY harness/clearance.py; $PY harness/two_step.py
+echo "== human fact-preservation check (Navya Nadimpalli)"; $PY harness/human_check_analysis.py; $PY harness/analyze_synth.py --human human_check/returned/human_same_facts.csv --out harness/results_synth/synth_summary_human.md; grep -E "human_same_facts" harness/results_synth/synth_summary_human.md | grep "| ALL"
 echo "== figure 1"; $PY harness/figures.py --summary harness/results_real5/summary.json harness/results_claude/summary.json --out report/fig1_real_pairs.png

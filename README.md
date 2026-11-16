@@ -38,7 +38,11 @@ Done during the sprint:
 - All live runs and results (`harness/results_real*`, `harness/results_synth`, `harness/results_omission`, `data/synthetic_live.jsonl`).
 - Harness changes after kickoff: resume and retry-invalid (`harness/test_resume.py`), Adaption backend and per-role routing, reasoning-effort and token caps, rewrite parser fix (empty `other_facts`), synthetic resume with interrupted-run recovery, condition filter, pacing.
 - New code: `harness/synth_to_pairs.py`, `harness/analyze_synth.py`, `harness/omission_probe.py`, `harness/scale_probe.py`, `harness/hypotheses.py`, `harness/judge_check.py`, `harness/omission_arm.py`, `harness/omission_arm_check.py`, `harness/rescore_probes.py`, `harness/control_check.py`, `harness/build_human_sheet.py`, `harness/figures.py`, Anthropic backend in `harness/run.py`.
-- Human fact-preservation sheet (`human_check/`), report and figure.
+- Human fact-preservation sheet (`human_check/`), returned and scored (`harness/human_check_analysis.py`), report and figure.
+
+## Human check
+
+Navya Nadimpalli blind-rated 40 items for fact preservation (`human_check/returned/`, scored by `harness/human_check_analysis.py`).
 
 ## Data
 
