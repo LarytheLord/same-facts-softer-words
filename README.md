@@ -54,6 +54,14 @@ Navya Nadimpalli blind-rated 40 items for fact preservation (`human_check/return
 
 Judges: openai/gpt-oss-120b and qwen/qwen3.8-27b (Groq free tier); gemma-4-31b-it, deepseek-v4-flash, glm-53-flash (Adaption Labs hosted; model IDs as returned by the provider). glm-5.2 started but was paused for cost. Frontier check: claude-opus-5-5 (Anthropic API). Synthetic rewriter: openai/gpt-oss-120b; checker: openai/gpt-oss-20b for 76 of the 83 judged rewrites, qwen/qwen3.8-27b for 6 and deepseek-v4-flash for 1 (recorded per row).
 
+## Multi-turn gate (mock only)
+
+`harness/multiturn_gate.py` applies gate-before-score to multi-turn conversations (JSONL: `id`, `turns`, `reference_facts`). Step 1 checks that the assistant's final answer commits to a position and marks each reference fact STATED or MISSING. Step 2 scores only if the answer commits AND every fact is STATED, otherwise the verdict is INSUFFICIENT and no score is requested. Only a toy mock backend ships; `--live` is refused (and stays refused even with `--allow-live`). Five synthetic conversations are in `data/examples/multiturn_synthetic.jsonl`.
+
+```sh
+python3 harness/multiturn_gate.py --input data/examples/multiturn_synthetic.jsonl --out harness/multiturn_gate_mock/out.jsonl
+```
+
 ## Reproduce
 
 Offline checks (no credentials):
