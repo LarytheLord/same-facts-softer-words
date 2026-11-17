@@ -1,0 +1,3 @@
+{"pair_id": "T01", "soft_text": "We are responding to an occurrence.", "plain_text": "Company A caused a fire that injured 3 workers.", "contrast_text": "Company A did not cause a fire that injured 3 workers."}
+{"pair_id": "T02", "soft_text": "An event happened at our site.", "plain_text": "A leak by Company B sickened 20 residents.", "contrast_text": "A leak by Company B did not sicken 20 residents."}
+{"pair_id": "T03", "soft_text": "We value safety.", "plain_text": "Company C spilled oil and killed fish.", "contrast_text": "Company C did not spill oil and kill fish."}
