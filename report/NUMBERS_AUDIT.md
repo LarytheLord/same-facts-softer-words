@@ -88,11 +88,43 @@ both interval ends were compared and agree to the printed precision.
 | 72 | App B | famous 5.57 (n = 7) vs 4.73 (n = 4); good 6.06 (n = 5) vs 4.60 (n = 6) | hypotheses.py H3, H4 | match |
 | 73 | App B | B04 gap 0.62 | hypotheses.py per-pair table: B04 0.62 | match |
 | 74 | App A | 11 incidents, n = 40 human items, 6 of 20, 11 of 20 | see rows 42 and 44 | match |
-| 75 | Fig 1 caption | 95% bootstrap CIs over 11 pairs | harness/figures.py regenerated; figure bytes differ run to run (png reverted, not part of this change) | match (not pixel-checked) |
+| 75 | Fig 1 caption | 95% bootstrap CIs over 11 pairs | harness/figures.py regenerated; figure bytes differ run to run (png reverted, not part of this change); figure pixels not compared | not reproducible offline |
 | 76 | 2 | Hwang 14 judges, 28.6%; Fox 0.50-0.63, 0.79-0.94, 24.6-36.9%; Huang GPT-5.5 2 of 200; JANUS 98.5-99.6% | cited papers, no offline copy | not reproducible offline |
 | 77 | 2 | prior work: 10 model families from 7 labs | author's earlier project, not in repo | not reproducible offline |
 | 78 | References | arXiv IDs, years, volumes | report/CITATIONS_VERIFIED.json is a separate record; not part of this audit | not reproducible offline |
 | 79 | 3.1, 3.3 | sources, retrieval, "we cannot verify the served weights" | provider side | not reproducible offline |
+
+## Commands that produced the values
+
+Run from the repo root. Named scripts print their values; the inline snippets read saved files only.
+
+```
+./reproduce.sh                                  # rows 3, 5, 28-34, 36-44, 50-62, 70-73 (via its printed tables and summary files)
+python3 harness/clearance.py --thresh 1         # row 65 (47)
+python3 harness/clearance.py --thresh 3         # row 65 (52)
+python3 harness/two_step.py --thresh 1          # row 65 (5)
+python3 harness/two_step.py --thresh 3          # row 65 (5)
+python3 harness/hypotheses.py                   # rows 70-73
+python3 harness/hypotheses.py --task severity   # row 71
+```
+
+Inline reads (Python, json and statistics from the standard library):
+
+- Rows 4, 11-14: load data/pairs.jsonl, print fact_coverage_soft, domain, tier, famous, and the host of source_plain.
+- Rows 8-10: for each results_real5/raw_*.jsonl and results_claude/raw_*.jsonl, keep stage == "judge", task == "wrongness",
+  status == "VALID"; take the mean answer for pair A03 per condition (soft, plain, contrast); min, max and mean over six judges.
+- Rows 25-26: count status != "VALID" by stage ("judge" or "rewrite") in each raw file.
+- Row 67: count answers for task == "fact_check", condition == "soft", status == "VALID" over the five results_real5 files; the same for claude.
+- Rows 16-19: collections.Counter over data/synth_sources.jsonl domain, data/pairs_synth_A.jsonl checker_status, and
+  data/synthetic_batchA.jsonl checker_model.
+- Rows 27, 45-49: over results_synth/raw_*.jsonl, per model: status counts; wrongness plain and soft means per pair_id;
+  count of |plain - soft| >= 2 and its sign; min and max rating; fact-check pairs where plain and soft verdicts differ;
+  mean absolute difference between all pairs of plain-condition wrongness ratings that share a source (itertools.combinations).
+- Row 50: Counter of status in data/omission_arm.jsonl.
+- Row 34: json.load of results_claude/summary.json, models -> tasks -> wrongness -> sensitivity_comparison (original, defended, reduction).
+- Row 63: import harness/two_step.py, call load_scores() and load_probe(), list soft-condition keys where the probe says
+  sufficient (mean of harmed and extent both STATED > 0.5) and the mean score is <= 2, grouped by pair_id.
+- Row 21: grep for effort and temperature in harness/run.py; Counter of status and finish_reason in the claude raw file.
 
 ## Wording note (not a numeric mismatch, text left unchanged)
 
