@@ -1,0 +1,8 @@
+{"pair_id": "C1", "model": "m", "condition": "soft", "task": "wrongness", "stage": "judge", "status": "VALID", "answer": 1}
+{"pair_id": "C1", "model": "m", "condition": "soft", "task": "wrongness", "stage": "judge", "status": "VALID", "answer": 2}
+{"pair_id": "C2", "model": "m", "condition": "soft", "task": "wrongness", "stage": "judge", "status": "VALID", "answer": 2}
+{"pair_id": "C2", "model": "m", "condition": "soft", "task": "wrongness", "stage": "judge", "status": "VALID", "answer": 3}
+{"pair_id": "C3", "model": "m", "condition": "soft", "task": "wrongness", "stage": "judge", "status": "VALID", "answer": 2}
+{"pair_id": "C1", "model": "m", "condition": "plain", "task": "wrongness", "stage": "judge", "status": "VALID", "answer": 9}
+{"pair_id": "C1", "model": "m", "condition": "soft", "task": "wrongness", "stage": "judge", "status": "INVALID", "answer": 0}
+{"pair_id": "C1", "model": "m", "condition": "soft", "task": "wrongness", "stage": "other", "status": "VALID", "answer": 0}
