@@ -23,7 +23,7 @@ One JSON object per line.
 | `plain_original` | regulator text before verdict and penalty removal (company name already replaced). Not shown to judges. Present in all 11 rows; it differs from `plain_text` in 10 and is identical in B07 |
 | `contrast_text` | `plain_text` with one morally relevant fact changed (for example an injury that did not occur). Constructed by the authors, not a quote |
 | `facts` | five-item fact checklist from the regulator record (see below) |
-| `fact_coverage_soft` | share of the five items that `soft_text` states, one of 0.1 to 0.4 |
+| `fact_coverage_soft` | soft score (partial credit per checklist item) for how much of the five items `soft_text` states; values in this file run 0.1 to 0.4 |
 | `famous` | true for 7 of 11 well-known cases |
 | `tier` | alignment-quality label assigned before scoring (see below) |
 | `source_soft`, `source_plain` | URL of the company statement and of the regulator record |
@@ -61,7 +61,7 @@ Texts were fetched on 2026-11-13 and trimmed by hand with model assistance (`met
 
 ## The five-item fact checklist
 
-Each pair has five checklist items taken from the regulator record, in this order: actor (who), action (what was done or failed), affected (who was harmed), numbers (counts, amounts, dates) and outcome (what resulted, or the enforcement result). Items are short phrases in `facts`. `fact_coverage_soft` is the fraction of the five that the company text states. It was filled in by the authors and is not an automatic measure.
+Each pair has five checklist items taken from the regulator record, in this order: actor (who), action (what was done or failed), affected (who was harmed), numbers (counts, amounts, dates) and outcome (what resulted, or the enforcement result). Items are short phrases in `facts`. `fact_coverage_soft` is a soft score: each item earns partial credit (not just stated or not stated), so values such as 0.1 are expected. It was filled in by the authors and is not an automatic measure.
 
 ## Licence and terms status, by source type
 
