@@ -23,6 +23,10 @@ About 198 calls (roughly $1.20 on Claude Opus 5.5, free on Groq's free tier). It
 
 A large leniency gap means low scores on incomplete statements mean "not established", not "not wrong"; do not let such a score close a case without an evidence-sufficiency check. Without `--live` it runs a mock to show the output format.
 
+## Use it on your own judge
+
+`harness/judge_check.py` runs the 11 pairs in `data/pairs.jsonl` through any judge you point it at and prints the leniency gap, fact sensitivity, abstention and triage numbers. Without `--live` it runs an offline mock and needs no key. Read `data/DATA_CARD.md` first for what the pairs are, their licence status and limits (n = 11, 7 famous cases, one animal-welfare case). The data is for checking judges, not for ranking companies.
+
 ## Pre-existing work (declared)
 
 Sprint kickoff: 13 Nov 2026, 14:15 UTC (19:45 IST). File creation times on disk:
