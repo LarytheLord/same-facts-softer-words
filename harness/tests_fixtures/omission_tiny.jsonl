@@ -1,0 +1,6 @@
+{"model": "m1", "pair_id": "T01", "condition": "soft", "repeat": 0, "answer": {"responsible": "MISSING", "harmed": "MISSING", "extent": "MISSING"}, "status": "VALID"}
+{"model": "m1", "pair_id": "T01", "condition": "plain", "repeat": 0, "answer": {"responsible": "STATED", "harmed": "STATED", "extent": "STATED"}, "status": "VALID"}
+{"model": "m1", "pair_id": "T02", "condition": "soft", "repeat": 0, "answer": {"responsible": "MISSING", "harmed": "MISSING", "extent": "STATED"}, "status": "VALID"}
+{"model": "m1", "pair_id": "T02", "condition": "plain", "repeat": 0, "answer": {"responsible": "STATED", "harmed": "STATED", "extent": "MISSING"}, "status": "VALID"}
+{"model": "m1", "pair_id": "T03", "condition": "soft", "repeat": 0, "answer": {"responsible": "MISSING", "harmed": "MISSING", "extent": "MISSING"}, "status": "VALID"}
+{"model": "m1", "pair_id": "T03", "condition": "plain", "repeat": 0, "answer": {"responsible": "STATED", "harmed": "STATED", "extent": "STATED"}, "status": "INVALID"}
