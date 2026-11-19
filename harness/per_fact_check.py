@@ -10,7 +10,8 @@ the note against each one. This script does that on data/pairs.jsonl:
           (STATED or MISSING)
 
 Per pair it writes n_facts, n_missing, coverage and a gate decision: INSUFFICIENT
-if any harm or extent fact is MISSING, else SUFFICIENT.
+if any harm or extent fact is MISSING, else SUFFICIENT. A pair with no harm or extent
+fact extracted, or whose backend call fails, is written as INVALID (never SUFFICIENT).
 
 Offline mock only unless --live is passed. --live needs an explicit flag and a real
 backend from harness/run.py. Refuses to write under data/ or harness/results_*.
@@ -117,6 +118,8 @@ def check_pair(backend, pair):
     facts = parse_facts(backend.complete(msgs, 0).get("text"))
     if facts is None:
         return {**base, "status": "INVALID", "error": "step1_unparseable", "gate": None}
+    if not any(f["kind"] in GATE_KINDS for f in facts):
+        return {**base, "status": "INVALID", "error": "no harm/extent facts extracted", "gate": None}
     for f in facts:
         msgs = [{"role": "system", "content": SYSTEM_CHECK},
                 {"role": "user", "content": json.dumps({"fact": f["fact"], "note": pair["soft_text"]})}]
@@ -164,13 +167,17 @@ def main(argv=None):
     out_file = out_dir / f"per_fact_{tag}.jsonl"
     if out_file.exists():
         ap.error(f"{out_file} exists; pass a new --out-dir")
-    from run import make_backend, read_pairs  # noqa: E402
+    from run import BackendFailure, make_backend, read_pairs  # noqa: E402
     pairs = read_pairs(a.pairs)
     backend = MockBackend() if not a.live else make_backend(a.model)
     out_dir.mkdir(parents=True, exist_ok=True)
     with out_file.open("w", encoding="utf-8") as fh:
         for p in pairs:
-            row = check_pair(backend, p)
+            try:
+                row = check_pair(backend, p)
+            except BackendFailure as exc:
+                row = {"pair_id": p["pair_id"], "status": "INVALID",
+                       "error": f"backend_failure: {exc}", "gate": None}
             row["model"] = a.model
             fh.write(json.dumps(row) + "\n")
             if row["status"] == "VALID":

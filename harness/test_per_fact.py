@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import compare_gates  # noqa: E402
 import per_fact_check as pf  # noqa: E402
+import run  # noqa: E402
 
 PAIR = {"pair_id": "T1", "domain": "x", "incident": "i",
         "plain_text": "Chemicals stored improperly caused a fire. Three workers were injured. 200 homes were evacuated.",
@@ -76,6 +77,66 @@ class PerFact(unittest.TestCase):
             self.assertEqual(row["pair_id"], "T1")
             with self.assertRaises(SystemExit):
                 pf.main(["--pairs", str(pairs), "--out-dir", str(out)])
+
+    def test_no_harm_or_extent_facts_is_invalid(self):
+        ex = json.dumps([{"fact": "cause", "kind": "responsible"}, {"fact": "misc", "kind": "other"}])
+        r = pf.check_pair(Fixed(ex, [V("STATED"), V("STATED")]), PAIR)
+        self.assertEqual(r["status"], "INVALID")
+        self.assertIn("no harm/extent facts", r["error"])
+        self.assertIsNone(r["gate"])
+
+    def test_mock_data_b06_is_invalid(self):
+        pairs = {p["pair_id"]: p for p in run.read_pairs(pf.ROOT / "data/pairs.jsonl")}
+        self.assertEqual(pf.check_pair(pf.MockBackend(), pairs["B06"])["status"], "INVALID")
+
+    def test_backend_failure_per_pair_is_invalid_row_and_run_continues(self):
+        class Flaky:
+            model = "fake"
+
+            def __init__(self):
+                self.inner = pf.MockBackend()
+
+            def complete(self, messages, repeat):
+                if "BOOM" in messages[-1]["content"]:
+                    raise run.BackendFailure("http_500", [])
+                return self.inner.complete(messages, repeat)
+
+        bad = {**PAIR, "pair_id": "T2", "plain_text": "BOOM. Three workers were injured."}
+        with tempfile.TemporaryDirectory() as t:
+            pairs = Path(t) / "pairs.jsonl"
+            pairs.write_text(json.dumps(PAIR) + "\n" + json.dumps(bad) + "\n" + json.dumps({**PAIR, "pair_id": "T3"}) + "\n")
+            out = Path(t) / "out"
+            orig = run.make_backend
+            run.make_backend = lambda model: Flaky()
+            try:
+                pf.main(["--model", "fake", "--live", "--pairs", str(pairs), "--out-dir", str(out)])
+            finally:
+                run.make_backend = orig
+            rows = [json.loads(l) for l in (out / "per_fact_fake.jsonl").read_text().splitlines()]
+        self.assertEqual([r["pair_id"] for r in rows], ["T1", "T2", "T3"])
+        self.assertEqual([r["status"] for r in rows], ["VALID", "INVALID", "VALID"])
+        self.assertIn("http_500", rows[1]["error"])
+
+    def test_mock_never_calls_make_backend_and_live_does(self):
+        calls = []
+
+        def boom(model):
+            calls.append(model)
+            raise AssertionError("make_backend called")
+
+        orig = run.make_backend
+        with tempfile.TemporaryDirectory() as t:
+            pairs = Path(t) / "pairs.jsonl"
+            pairs.write_text(json.dumps(PAIR) + "\n")
+            try:
+                run.make_backend = boom
+                pf.main(["--pairs", str(pairs), "--out-dir", str(Path(t) / "a_mock")])
+                self.assertEqual(calls, [])
+                run.make_backend = lambda model: (calls.append(model), pf.MockBackend())[1]
+                pf.main(["--model", "fake", "--live", "--pairs", str(pairs), "--out-dir", str(Path(t) / "b")])
+                self.assertEqual(calls, ["fake"])
+            finally:
+                run.make_backend = orig
 
 
 class Compare(unittest.TestCase):
